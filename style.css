@@ -79,8 +79,8 @@ body {
   line-height: 135%;
 }
 
-.numero{
-  font-size: .8rem;
+.numero {
+  font-size: 0.8rem;
 }
 
 .imagem {
@@ -93,7 +93,7 @@ body {
   opacity: 0.9;
 }
 .section-img::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 0;
   height: 2px;
@@ -111,16 +111,25 @@ body {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .section-img h1 {
   color: #ddd8c5;
-  text-align: center;
-  font-size: 3.75rem;
+  margin: 0px;
+  font-size: 2rem;
   font-family: Montserrat;
   font-weight: 400;
-  margin-top: 40px;
+  padding: 5px 10px;
 }
-
+.section-img .borda {
+  border: #ddd8c5 solid 2px;
+  border-radius: 5px 10px;
+  display: inline-block;
+  
+}
 @media (max-width: 1200px) {
   .titulo {
     font-size: 3rem;
@@ -149,8 +158,8 @@ body {
     font-size: 0.95rem;
     line-height: 135%;
   }
-  .numero{
-    font-size: .7rem;
+  .numero {
+    font-size: 0.7rem;
   }
 
   .texto2 {
@@ -163,8 +172,7 @@ body {
     margin-top: 120px;
   }
   .section-img h1 {
-    font-size: 3rem;
-    margin-top: 20px;
+    font-size: 2rem;
   }
 }
 @media (max-width: 1000px) {
@@ -185,8 +193,8 @@ body {
     font-size: 0.8rem;
     line-height: 135%;
   }
-  .numero{
-    font-size: .6rem;
+  .numero {
+    font-size: 0.6rem;
   }
   .texto2 {
     font-size: 0.7rem;
@@ -205,8 +213,7 @@ body {
     margin-bottom: 20px;
   }
   .section-img h1 {
-    font-size: 2rem;
-    margin-top: 20px;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
@@ -227,8 +234,8 @@ body {
     font-size: 0.65rem;
     line-height: 135%;
   }
-  .numero{
-    font-size: .5rem;
+  .numero {
+    font-size: 0.5rem;
   }
 
   .texto2 {
@@ -295,7 +302,7 @@ body {
     margin-bottom: 20px;
   }
   .section-img h1 {
-    font: 1rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -360,13 +367,13 @@ font-family: 'Roboto Slab', serif; */
   transform: translate3d(0, 0, 0);
 }
 
-.titulo.js-scroll{
+.titulo.js-scroll {
   opacity: 1;
   transform: translate3d(-50px, 0, 0);
   transition: 1s;
 }
 
-.titulo.js-scroll.ativo{
+.titulo.js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: 1s;
