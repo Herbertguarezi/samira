@@ -81,6 +81,25 @@ body {
 
 .imagem {
   border-radius: 20px;
+  transition: 0.3s;
+  position: relative;
+}
+.imagem:hover {
+  scale: 1.005;
+  opacity: 0.9;
+}
+.section-img::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  margin-bottom: 20px;
+  background: #ddd8c5;
+}
+
+.section-img.ativo::before {
+  width: 100%;
+  transition: 3s;
 }
 
 .section-img {
@@ -309,7 +328,7 @@ body {
     margin-bottom: 20px;
   }
   .section-img h1 {
-    font: .8rem;
+    font: 0.8rem;
   }
 }
 /* font-family: 'Dancing Script', cursive;
@@ -319,10 +338,22 @@ font-family: 'Roboto Slab', serif; */
 .js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.titulo.js-scroll{
+  opacity: 1;
+  transform: translate3d(-50px, 0, 0);
+  transition: 1s;
+}
+
+.titulo.js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 1s;
 }
